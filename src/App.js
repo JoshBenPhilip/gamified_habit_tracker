@@ -1,24 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+// import "./game_comp_lib/game_comp_lib.css";
+import { CharCard, HabitList } from "./large_components/large_comp_lib.tsx";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <CharCard></CharCard>
+      {/* <HabitList></HabitList> */}
+      <div>
+        <header>
+          <h1>Todolist</h1>
+          <form>
+            <input type="text" placeholder="search todos" />
+          </form>
+        </header>
+        <ul>
+          <li>test list item</li>
+        </ul>
+      </div>
+    </>
   );
 }
 
